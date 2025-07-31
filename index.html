@@ -1,47 +1,70 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Marufia Fades | Men's Salon Surrey BC</title>
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marufia Fades | Premium Salon Experience</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header class="hero">
-        <div class="container">
-            <h1>Marufia Fades</h1>
-            <p>Where Style Meets Precision</p>
-            <a href="#booking" class="btn">Book Your Fade</a>
-        </div>
-    </header>
+<body class="bg-gray-900 text-white font-sans">
 
-    <section class="services">
-        <h2>Our Services</h2>
-        <div class="service-grid">
-            <div class="card">Fade Haircuts</div>
-            <div class="card">Beard Styling</div>
-            <div class="card">Classic Haircuts</div>
-            <div class="card">Add-ons & Grooming</div>
-        </div>
-    </section>
+  <!-- Hero Section -->
+  <section class="bg-black text-center py-20 px-4">
+    <h1 class="text-4xl md:text-6xl font-bold tracking-wide mb-4 text-yellow-400">Marufia Fades</h1>
+    <p class="text-lg md:text-xl text-gray-300 mb-6">Experience Premium Haircuts & Fades in Style</p>
+    <a href="#book" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-300 transition">Book an Appointment</a>
+  </section>
 
-    <section class="booking" id="booking">
-        <h2>Book an Appointment</h2>
-        <form action="https://formsubmit.co/marufiamanav21@gmail.com" method="POST">
-            <input type="text" name="name" placeholder="Full Name" required />
-            <input type="email" name="email" placeholder="Email" required />
-            <input type="text" name="phone" placeholder="Phone Number" required />
-            <input type="text" name="service" placeholder="Preferred Service" required />
-            <input type="text" name="datetime" placeholder="Preferred Date & Time" required />
-            <textarea name="message" placeholder="Additional Notes"></textarea>
-            <button type="submit" class="btn">Submit</button>
-        </form>
-    </section>
+  <!-- Services -->
+  <section class="py-16 px-6 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-center mb-10 text-yellow-400">Our Services</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl">
+        <h3 class="text-xl font-bold mb-2">Classic Fade</h3>
+        <p class="text-gray-400">Precision fades tailored to your style.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl">
+        <h3 class="text-xl font-bold mb-2">Beard Sculpting</h3>
+        <p class="text-gray-400">Clean, crisp beard grooming and design.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl">
+        <h3 class="text-xl font-bold mb-2">Hair Styling</h3>
+        <p class="text-gray-400">Trendy styles with premium products.</p>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Marufia Fades | 8725 129 St, Surrey BC</p>
-        <p>Email: marufiamanav21@gmail.com</p>
-    </footer>
+  <!-- About -->
+  <section class="bg-gray-800 py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold text-yellow-400 mb-6">About Marufia Fades</h2>
+    <p class="max-w-3xl mx-auto text-gray-300 text-lg">
+      Founded with a passion for precision and style, Marufia Fades offers top-tier grooming services for the modern gentleman. Our experienced barbers combine technique and trend to give you the best cuts in town.
+    </p>
+  </section>
+
+  <!-- Gallery -->
+  <section class="py-16 px-6 max-w-6xl mx-auto">
+    <h2 class="text-3xl font-bold text-center text-yellow-400 mb-10">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <img src="https://source.unsplash.com/featured/?barber" alt="Gallery Image" class="rounded shadow" />
+      <img src="https://source.unsplash.com/featured/?haircut" alt="Gallery Image" class="rounded shadow" />
+      <img src="https://source.unsplash.com/featured/?fade" alt="Gallery Image" class="rounded shadow" />
+      <img src="https://source.unsplash.com/featured/?barbershop" alt="Gallery Image" class="rounded shadow" />
+    </div>
+  </section>
+
+  <!-- Contact / Booking -->
+  <section id="book" class="bg-black py-16 px-6 text-center">
+    <h2 class="text-3xl font-bold text-yellow-400 mb-6">Book Your Slot</h2>
+    <p class="text-gray-400 mb-6">Call us or drop by to get styled like a pro.</p>
+    <p class="text-lg font-semibold text-white">📞 +91 98765 43210</p>
+    <p class="text-lg text-white mt-2">📍 Marufia Fades, Sector 21, New Delhi</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-6 text-gray-400">
+    &copy; 2025 Marufia Fades. All rights reserved.
+  </footer>
+
 </body>
 </html>
