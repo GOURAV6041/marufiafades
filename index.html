@@ -3,62 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marufia Fades | Premium Salon Experience</title>
+  <title>Marufia Fades | Premium Barber Studio</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    body {
+      font-family: 'Anton', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body class="bg-gray-900 text-white">
 
   <!-- Hero Section -->
-  <section class="bg-black text-center py-20 px-4">
-    <h1 class="text-4xl md:text-6xl font-bold tracking-wide mb-4 text-yellow-400">Marufia Fades</h1>
-    <p class="text-lg md:text-xl text-gray-300 mb-6">Experience Premium Haircuts & Fades in Style</p>
-    <a href="#book" class="bg-yellow-400 text-black font-semibold px-6 py-3 rounded hover:bg-yellow-300 transition">Book an Appointment</a>
+  <section class="relative h-screen flex items-center justify-center text-center bg-black">
+    <video autoplay muted loop class="absolute w-full h-full object-cover opacity-30">
+      <source src="https://assets.mixkit.co/videos/preview/mixkit-barber-cutting-hair-of-a-man-4782-large.mp4" type="video/mp4">
+    </video>
+    <div class="z-10">
+      <h1 class="text-6xl text-yellow-400 mb-4" data-aos="fade-down">Marufia Fades</h1>
+      <p class="text-xl text-gray-200 mb-6" data-aos="fade-up" data-aos-delay="200">Where Style Meets Precision</p>
+      <a href="#book" class="bg-yellow-400 text-black px-8 py-3 text-lg rounded shadow-lg hover:bg-yellow-300 transition" data-aos="zoom-in" data-aos-delay="400">Book Now</a>
+    </div>
   </section>
 
   <!-- Services -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10 text-yellow-400">Our Services</h2>
-    <div class="grid md:grid-cols-3 gap-6 text-center">
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl">
-        <h3 class="text-xl font-bold mb-2">Classic Fade</h3>
-        <p class="text-gray-400">Precision fades tailored to your style.</p>
+  <section class="py-20 px-6 max-w-6xl mx-auto text-center">
+    <h2 class="text-4xl text-yellow-400 mb-12" data-aos="fade-up">Our Signature Services</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition" data-aos="fade-up">
+        <img src="https://cdn-icons-png.flaticon.com/512/3466/3466123.png" alt="Fade" class="w-20 h-20 mx-auto mb-4">
+        <h3 class="text-2xl mb-2">Skin Fade</h3>
+        <p class="text-gray-300">Crisp, clean fades tailored to your head shape & style.</p>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl">
-        <h3 class="text-xl font-bold mb-2">Beard Sculpting</h3>
-        <p class="text-gray-400">Clean, crisp beard grooming and design.</p>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://cdn-icons-png.flaticon.com/512/2922/2922676.png" alt="Beard" class="w-20 h-20 mx-auto mb-4">
+        <h3 class="text-2xl mb-2">Beard Styling</h3>
+        <p class="text-gray-300">From sharp lines to full grooming, beard perfection awaits.</p>
       </div>
-      <div class="bg-gray-800 p-6 rounded-lg shadow hover:shadow-xl">
-        <h3 class="text-xl font-bold mb-2">Hair Styling</h3>
-        <p class="text-gray-400">Trendy styles with premium products.</p>
+      <div class="bg-gray-800 p-6 rounded-lg shadow-lg transform hover:scale-105 transition" data-aos="fade-up" data-aos-delay="400">
+        <img src="https://cdn-icons-png.flaticon.com/512/2917/2917997.png" alt="Haircut" class="w-20 h-20 mx-auto mb-4">
+        <h3 class="text-2xl mb-2">Modern Haircuts</h3>
+        <p class="text-gray-300">Trendiest cuts done with skill and finesse for all ages.</p>
       </div>
     </div>
   </section>
 
-  <!-- About -->
-  <section class="bg-gray-800 py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-6">About Marufia Fades</h2>
-    <p class="max-w-3xl mx-auto text-gray-300 text-lg">
-      Founded with a passion for precision and style, Marufia Fades offers top-tier grooming services for the modern gentleman. Our experienced barbers combine technique and trend to give you the best cuts in town.
-    </p>
+  <!-- About Section with Illustration -->
+  <section class="bg-gray-800 py-20 px-6">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+      <div data-aos="fade-right">
+        <h2 class="text-4xl text-yellow-400 mb-6">About Marufia Fades</h2>
+        <p class="text-gray-300 text-lg">Marufia Fades isn't just a barbershop – it's a lifestyle. We specialize in delivering stylish, trendsetting cuts with professionalism and passion. Our team of expert barbers ensures every visit is an experience in style and confidence.</p>
+      </div>
+      <div data-aos="fade-left">
+        <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_jrksm5wl.json" background="transparent" speed="1" style="width: 100%; height: 300px;" loop autoplay></lottie-player>
+      </div>
+    </div>
   </section>
 
   <!-- Gallery -->
-  <section class="py-16 px-6 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center text-yellow-400 mb-10">Gallery</h2>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <img src="https://source.unsplash.com/featured/?barber" alt="Gallery Image" class="rounded shadow" />
-      <img src="https://source.unsplash.com/featured/?haircut" alt="Gallery Image" class="rounded shadow" />
-      <img src="https://source.unsplash.com/featured/?fade" alt="Gallery Image" class="rounded shadow" />
-      <img src="https://source.unsplash.com/featured/?barbershop" alt="Gallery Image" class="rounded shadow" />
+  <section class="py-20 px-6 max-w-6xl mx-auto">
+    <h2 class="text-4xl text-yellow-400 text-center mb-12" data-aos="fade-up">Gallery</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4" data-aos="zoom-in">
+      <img src="https://source.unsplash.com/featured/?barbershop" class="rounded-lg shadow-lg">
+      <img src="https://source.unsplash.com/featured/?fade" class="rounded-lg shadow-lg">
+      <img src="https://source.unsplash.com/featured/?beard" class="rounded-lg shadow-lg">
+      <img src="https://source.unsplash.com/featured/?menshair" class="rounded-lg shadow-lg">
     </div>
   </section>
 
-  <!-- Contact / Booking -->
-  <section id="book" class="bg-black py-16 px-6 text-center">
-    <h2 class="text-3xl font-bold text-yellow-400 mb-6">Book Your Slot</h2>
-    <p class="text-gray-400 mb-6">Call us or drop by to get styled like a pro.</p>
-    <p class="text-lg font-semibold text-white">📞 +91 82643 44226</p>
-    <p class="text-lg text-white mt-2">📍 Marufia Fades, Sector 21, New Delhi</p>
+  <!-- Booking Section -->
+  <section id="book" class="bg-black py-20 text-center px-6">
+    <h2 class="text-4xl text-yellow-400 mb-4" data-aos="fade-down">Book an Appointment</h2>
+    <p class="text-gray-300 mb-6" data-aos="fade-up">We're just an email away. Your next fade is waiting.</p>
+    <p class="text-lg" data-aos="zoom-in">📍 8725 129 Street, Surrey, BC V3W 0L1</p>
+    <p class="text-lg mt-2" data-aos="zoom-in" data-aos-delay="200">📧 marufiamanav21@gmail.com</p>
   </section>
 
   <!-- Footer -->
@@ -66,5 +88,8 @@
     &copy; 2025 Marufia Fades. All rights reserved.
   </footer>
 
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
