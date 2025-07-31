@@ -1,0 +1,77 @@
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #0a0a0a;
+    color: #fff;
+}
+a { color: #FDB813; text-decoration: none; }
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.hero {
+    background: url('../images/hero-barber.svg') center/cover no-repeat;
+    padding: 100px 20px;
+}
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+.btn {
+    background: #FDB813;
+    color: #0a0a0a;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+.services {
+    padding: 60px 20px;
+}
+.services h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 10px;
+}
+.booking {
+    background: #111;
+    padding: 60px 20px;
+}
+.booking h2 {
+    margin-bottom: 1em;
+}
+form {
+    display: grid;
+    gap: 15px;
+    max-width: 500px;
+    margin: auto;
+}
+input, textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
